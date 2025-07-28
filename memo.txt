@@ -4,4 +4,3 @@ npm i express nodemon
 
 npm i ejs
 
-23分まで

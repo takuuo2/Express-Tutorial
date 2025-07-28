@@ -3,6 +3,8 @@ const app = express();
 const PORT = 3000;
 const userRouter = require("./routes/user");
 
+// app.use(mylogger);
+
 // app.use(express.static("public"));
 app.set("view engine", "ejs");
 
@@ -20,5 +22,7 @@ app.use("/user" , userRouter);
 // app.use("/auth", authRouter);
 // app.use("/customer", customerRouter);
 // app.use("/product", producRouter);
+
+
 
 app.listen(PORT, () => console.log("サーバーが起動しました"));
